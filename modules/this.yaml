@@ -23,4 +23,4 @@ spec:
     - name: username
       sensitive: false
   workspace:
-    name: kubernetes-operator-this
+    name: plan-only
