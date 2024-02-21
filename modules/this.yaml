@@ -19,5 +19,6 @@ spec:
     - name: secret
       sensitive: true
     - name: username
+      sensitive: false
   workspace:
     name: kubernetes-operator-this
