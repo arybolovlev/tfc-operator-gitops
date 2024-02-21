@@ -16,5 +16,9 @@ spec:
   terraformVariables:
     - name: username_length
       value: "4"
+      hcl: false
+      sensitive: false
     - name: secret_length
       value: "8"
+      hcl: false
+      sensitive: false
