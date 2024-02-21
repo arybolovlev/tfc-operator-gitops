@@ -1,0 +1,20 @@
+---
+apiVersion: app.terraform.io/v1alpha2
+kind: Workspace
+metadata:
+  name: this
+spec:
+  organization: kubernetes-operator
+  token:
+    secretKeyRef:
+      name: tfc-operator
+      key: token
+  name: kubernetes-operator-this
+  description: Kubernetes Operator Automated Workspace
+  applyMethod: auto
+  allowDestroyPlan: true
+  terraformVariables:
+    - name: username_length
+      value: "4"
+    - name: secret_length
+      value: "8"
