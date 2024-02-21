@@ -3,6 +3,8 @@ apiVersion: app.terraform.io/v1alpha2
 kind: Module
 metadata:
   name: this
+  annotations:
+    module.app.terraform.io/time: "this"
 spec:
   organization: kubernetes-operator
   token:
