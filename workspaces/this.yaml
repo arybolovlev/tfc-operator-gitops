@@ -2,14 +2,14 @@
 apiVersion: app.terraform.io/v1alpha2
 kind: Workspace
 metadata:
-  name: this
+  name: argo-cd-01
 spec:
   organization: kubernetes-operator
   token:
     secretKeyRef:
       name: tfc-operator
       key: token
-  name: kubernetes-operator-this
+  name: argo-cd-01
   description: Kubernetes Operator Automated Workspace
   applyMethod: auto
   allowDestroyPlan: true
