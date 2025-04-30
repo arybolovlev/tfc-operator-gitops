@@ -2,7 +2,7 @@
 apiVersion: app.terraform.io/v1alpha2
 kind: Module
 metadata:
-  name: this
+  name: argo-cd-01
   annotations:
     module.app.terraform.io/time: "this"
 spec:
@@ -23,4 +23,4 @@ spec:
     - name: username
       sensitive: false
   workspace:
-    name: plan-only
+    name: argo-cd-01
