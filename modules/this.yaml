@@ -12,6 +12,7 @@ spec:
       name: tfc-operator
       key: token
   destroyOnDeletion: true
+  restartedAt: "1"
   module:
     source: github.com/arybolovlev/terraform-provider-module-random?ref=0.0.19
   variables:
@@ -20,7 +21,7 @@ spec:
   outputs:
     - name: secret
       sensitive: true
-    # - name: username
-    #   sensitive: false
+    - name: username
+      sensitive: false
   workspace:
     name: argo-cd-01
