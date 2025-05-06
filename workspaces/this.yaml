@@ -13,6 +13,9 @@ spec:
   description: Kubernetes Operator Automated Workspace
   applyMethod: auto
   allowDestroyPlan: true
+  executionMode: agent
+  agentPool:
+    name: this
   terraformVariables:
     - name: username_length
       value: "4"
