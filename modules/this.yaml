@@ -20,7 +20,7 @@ spec:
   outputs:
     - name: secret
       sensitive: true
-    - name: username
-      sensitive: false
+    # - name: username
+    #   sensitive: false
   workspace:
     name: argo-cd-01
