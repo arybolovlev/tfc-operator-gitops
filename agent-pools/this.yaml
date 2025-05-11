@@ -14,6 +14,6 @@ spec:
   - name: token
   autoscaling:
     maxReplicas: 2
-    minReplicas: 1
+    minReplicas: 0
   agentDeployment:
     replicas: 0
