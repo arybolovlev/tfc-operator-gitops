@@ -1,0 +1,19 @@
+---
+apiVersion: app.terraform.io/v1alpha2
+kind: AgentPool
+metadata:
+  name: argo
+spec:
+  name: argo
+  organization: kubernetes-operator
+  token:
+    secretKeyRef:
+      name: hcp-terraform-operator
+      key: token
+  agentTokens:
+  - name: token
+  autoscaling:
+    maxReplicas: 2
+    minReplicas: 0
+  agentDeployment:
+    replicas: 0
