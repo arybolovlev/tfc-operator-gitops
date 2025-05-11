@@ -9,7 +9,7 @@ spec:
   organization: kubernetes-operator
   token:
     secretKeyRef:
-      name: tfc-operator
+      name: hcp-terraform-operator
       key: token
   destroyOnDeletion: true
   restartedAt: "1"
