@@ -7,7 +7,7 @@ spec:
   organization: kubernetes-operator
   token:
     secretKeyRef:
-      name: tfc-operator
+      name: hcp-terraform-operator
       key: token
   name: argo-cd-01
   description: Kubernetes Operator Automated Workspace
