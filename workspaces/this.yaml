@@ -15,7 +15,7 @@ spec:
   allowDestroyPlan: true
   executionMode: agent
   agentPool:
-    name: this
+    name: argo
   terraformVariables:
     - name: username_length
       value: "8"
